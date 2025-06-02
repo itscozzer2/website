@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpiralMC Store - Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+    /* Reset & base */
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #0d0f1a, #000000);
+      color: #d3d3ff;
+      font-family: 'Roboto', sans-serif;
+      padding: 80px 20px 60px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+      position: relative;
+    }
+
+    /* IP box top-left */
+    #ip-box {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: linear-gradient(135deg, #7b5fff, #4a00e0);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 12px 20px;
+      border-radius: 12px;
+      box-shadow:
+        0 0 10px #a580ffcc,
+        0 0 25px #7b5fffaa;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.25s ease, box-shadow 0.3s ease;
+      z-index: 9999;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    #ip-box:hover {
+      transform: scale(1.12);
+      box-shadow:
+        0 0 25px #a580ff,
+        0 0 40px #7b5fff;
+    }
+
+    /* Navigation bar */
+    nav {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 9999;
+      font-family: 'Orbitron', sans-serif;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 24px;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+    nav ul li a {
+      color: #a580ff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 8px 14px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: text;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #7b5fff;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 12px #a580ff;
+      cursor: pointer;
+    }
+
+    /* Main header */
+    header {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #a580ff;
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 0 0 25px #a580ff;
+      letter-spacing: 0.15em;
+      user-select: text;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #cbbaff;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px #a580ff;
+      user-select: text;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #c0c0ffdd;
+      margin-bottom: 20px;
+      user-select: text;
+    }
+
+    a.discord-link {
+      display: inline-block;
+      color: #7b5fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.25rem;
+      padding: 10px 20px;
+      border-radius: 14px;
+      background: #241f4d;
+      box-shadow: 0 0 15px #7b5fffaa;
+      transition: background 0.3s ease, color 0.3s ease;
+      user-select: text;
+      cursor: pointer;
+    }
+    a.discord-link:hover {
+      background: #7b5fff;
+      color: #fff;
+      box-shadow: 0 0 25px #a580ff;
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #8a80bbcc;
+      user-select: text;
+    }
+    .footer-links a {
+      color: #a580ffcc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- IP Box -->
+  <div id="ip-box" title="Click to copy IP">play.spiralmc.fun</div>
+
+  <!-- Navigation -->
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="home.html" tabindex="0">Home</a></li>
+      <li><a href="ranks.html" tabindex="0">Ranks</a></li>
+      <li><a href="coins.html" tabindex="0">Coins</a></li>
+      <li><a href="support.html" tabindex="0">Support</a></li>
+    </ul>
+  </nav>
+
+  <header>SPIRALMC STORE</header>
+
+  <p>Welcome to the official</p>
+
+  <h2>FireMC Store</h2>
+
+  <p>FireMC is a free-to-play Public Minecraft Server. Items can be purchased here to enhance gameplay and grant the player various special perks.</p>
+
+  <p>To begin, please select a category from the sidebar.</p>
+
+  <h2>Support</h2>
+
+  <p>Need any questions answered before checkout? Waited more than 20 minutes but your package still has not arrived? Ask the community/staff on Discord, or for payment support, submit a support ticket on our Discord Server. You can also contact us on our Public Contact Email: <a href="mailto:contactfiremc@gmail.com" style="color:#a580ff; text-decoration:underline;">contactfiremc@gmail.com</a></p>
+
+  <p><a href="#" class="discord-link" tabindex="0">Discord Server</a></p>
+
+  <h2>Refund Policy</h2>
+
+  <p>All payments are final and non-refundable. Attempting a chargeback or opening a PayPal dispute will result in permanent and irreversible banishment from all of our servers, and other minecraft stores.</p>
+
+  <p>Payments are taken and secured by Tebex, a world leader in online gaming transactions.</p>
+
+  <p>It could take between 1-20 minutes for your purchase to be credited in-game. If you are still not credited after this time period, please open a support ticket on our forums with proof of purchase and we will look into your issue.</p>
+
+  <p>If you are banned from FireMC for breaking our rules, you will lose access to your purchased goods for the duration of your ban. The strict "no refund policy" will also remain in place.</p>
+
+  <div class="footer-links">
+    <a href="#">Terms and Conditions</a> |
+    <a href="#">Impressum</a> |
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <script>
+    // Copy IP text on click
+    const ipBox = document.getElementById('ip-box');
+    ipBox.addEventListener('click', () => {
+      navigator.clipboard.writeText(ipBox.textContent).then(() => {
+        const originalText = ipBox.textContent;
+        ipBox.textContent = "Copied!";
+        setTimeout(() => {
+          ipBox.textContent = originalText;
+        }, 1500);
+      }).catch(() => {
+        alert("Failed to copy. Please copy manually: " + ipBox.textContent);
+      });
+    });
+  </script>
+
+</body>
+</html>

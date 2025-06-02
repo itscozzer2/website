@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpiralMC Store - Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0; padding: 80px 20px 40px;
+      background: #0f0f1a; color: white;
+      font-family: 'Orbitron', sans-serif;
+      line-height: 1.5;
+      user-select: none;
+    }
+    #ip-box {
+      position: fixed; top: 15px; left: 15px;
+      background: #7b5fff; padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold; font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #a580ff;
+      transition: background 0.3s ease;
+    }
+    #ip-box:hover {
+      background: #9f7fff;
+    }
+    nav {
+      position: fixed; top: 15px; right: 15px;
+      font-size: 18px;
+      user-select: none;
+    }
+    nav a {
+      color: #a580ff;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d3bbff;
+    }
+    h1 {
+      font-size: 44px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #c2a1ff;
+      text-shadow: 0 0 15px #9a72ff;
+    }
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #ddd;
+    }
+    .content p {
+      margin-bottom: 18px;
+    }
+    .content strong {
+      color: #c2a1ff;
+      font-weight: 700;
+    }
+    .content a {
+      color: #a580ff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    .content a:hover {
+      color: #d3bbff;
+      text-decoration: underline;
+    }
+    footer {
+      max-width: 700px;
+      margin: 50px auto 0;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      user-select: text;
+    }
+    footer a {
+      color: #7b5fff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 600;
+    }
+    footer a:hover {
+      color: #a580ff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="ip-box" title="Click to copy IP">play.spiralmc.fun</div>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="ranks.html">Ranks</a>
+    <a href="coins.html">Coins</a>
+    <a href="support.html">Support</a>
+  </nav>
+
+  <h1>SpiralMC Store Support</h1>
+
+  <div class="content">
+    <p>Welcome to the official <strong>SpiralMC Store</strong>.</p>
+
+    <p>SpiralMC is a free-to-play Public Minecraft Server. Items can be purchased here to enhance gameplay and grant the player various special perks.</p>
+
+    <p>To begin, please select a category from the sidebar.</p>
+
+    <h2>Support</h2>
+    <p>Need any questions answered before checkout? Waited more than 20 minutes but your package still has not arrived? Ask the community/staff on Discord, or for payment support, submit a support ticket on our Discord Server.</p>
+    <p>You can also contact us on our Public Contact Email: <a href="mailto:contact@spiralmc.fun">contact@spiralmc.fun</a></p>
+
+    <p><a href="https://discord.gg/2snQhZK66N" target="_blank" rel="noopener noreferrer">Discord Server</a></p>
+
+    <h2>Refund policy</h2>
+    <p>All payments are final and non-refundable. Attempting a chargeback or opening a PayPal dispute will result in permanent and irreversible banishment from all of our servers, and other Minecraft stores.</p>
+
+    <p>Payments are taken and secured by Tebex, a world leader in online gaming transactions.</p>
+
+    <p>It could take between 1-20 minutes for your purchase to be credited in-game. If you are still not credited after this time period, please open a support ticket on our forums with proof of purchase and we will look into your issue.</p>
+
+    <p>If you are banned from SpiralMC for breaking our rules, you will lose access to your purchased goods for the duration of your ban. The strict "no refund policy" will also remain in place.</p>
+  </div>
+
+  <footer>
+    <a href="#">Terms and Conditions</a> | 
+    <a href="#">Impressum</a> | 
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+  <script>
+    // Copy IP box
+    document.getElementById('ip-box').addEventListener('click', () => {
+      navigator.clipboard.writeText('play.spiralmc.fun').then(() => {
+        alert('IP address copied to clipboard!');
+      });
+    });
+  </script>
+
+</body>
+</html>

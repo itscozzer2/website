@@ -88,6 +88,28 @@
       cursor: pointer;
     }
 
+    /* Image list below navigation */
+    ul.image-list {
+      position: fixed;
+      top: 65px; /* below nav (15px top + ~40px nav height + 10px gap) */
+      right: 15px;
+      z-index: 9999;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 150px;
+      user-select: none;
+    }
+    ul.image-list li {
+      margin-bottom: 10px;
+    }
+    ul.image-list img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #7b5fffaa;
+      display: block;
+    }
+
     /* Main header */
     header {
       font-family: 'Orbitron', sans-serif;
@@ -173,6 +195,13 @@
       <li><a href="support.html" tabindex="0">Support</a></li>
     </ul>
   </nav>
+
+  <!-- Image list below nav -->
+  <ul class="image-list" aria-label="Store images">
+    <li>
+      <img src="https://files09.oaiusercontent.com/file-7uNoxEyEL81eo9ET7oAMhJ?se=2025-06-02T16%3A24%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df8de28af-8ceb-4e04-8f6e-bedd8c18987b.png&sig=5Fdm7T7Gf9c/BFBql%2Bglu8qlRYz3k/4zMPyL8P1Mt9Y%3D" alt="Store Image 1" />
+    </li>
+  </ul>
 
   <header>SPIRALMC STORE</header>
 
